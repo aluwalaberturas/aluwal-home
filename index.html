@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aluwal Home — Cortinas a medida en Pilar</title>
+<meta name="description" content="Fábrica de cortinas a medida en Pilar. Roller blackout, sunscreen, eclipse, bandas verticales, panel oriental y clásicas. Medimos, fabricamos e instalamos en zona norte.">
+<meta property="og:title" content="Aluwal Home — Cortinas a medida">
+<meta property="og:description" content="Fábrica de cortinas a medida en Pilar. Pedí tu cotización por WhatsApp.">
+<meta property="og:image" content="img/cortina2.jpg">
+<meta name="theme-color" content="#151515">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f3efe9; --paper-2:#e8e2d8; --ink:#151515; --ink-2:#2a2a2a;
+  --muted:#6e6860; --line:rgba(21,21,21,.14); --line-light:rgba(255,255,255,.22);
+  --stone:#a1978a;
+  --serif:'Cormorant Garamond', Georgia, serif;
+  --sans:'Jost', system-ui, sans-serif;
+  --gutter:clamp(16px,4vw,56px);
+  --max:1280px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.eyebrow{font-size:11px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+.h2{font-family:var(--serif);font-weight:400;font-size:clamp(36px,5vw,64px);line-height:1.04;letter-spacing:-.01em}
+.h2 em{font-style:italic;color:var(--muted)}
+.lead{font-size:clamp(16px,1.4vw,18px);color:var(--muted);max-width:52ch}
+
+/* Botones: borde fino */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border:1px solid currentColor;font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;cursor:pointer;background:transparent;transition:background .3s,color .3s,border-color .3s}
+.btn:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn--solid{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn--solid:hover{background:transparent;color:var(--ink)}
+.btn--light{color:#fff}
+.btn--light:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn svg{width:14px;height:14px}
+.link{font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:4px;cursor:pointer;background:none;border-top:0;border-left:0;border-right:0}
+
+/* Barra superior */
+.topbar{background:var(--ink);color:rgba(255,255,255,.78);font-size:11px;letter-spacing:.22em;text-transform:uppercase;text-align:center;padding:10px var(--gutter);position:relative;z-index:60}
+.topbar span{white-space:nowrap}
+.topbar i{font-style:normal;opacity:.4;margin:0 12px}
+
+/* Header */
+.header{position:fixed;left:0;right:0;top:38px;z-index:50;transition:background .4s,top .4s,border-color .4s;border-bottom:1px solid transparent}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{height:30px;width:auto;transition:filter .4s}
+.brand .wm{height:24px}
+.nav{display:flex;gap:34px;align-items:center}
+.nav a{font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;opacity:.85;transition:opacity .2s}
+.nav a:hover{opacity:1}
+.header{color:#fff}
+.header .brand img{filter:invert(1)}
+.header.solid{background:rgba(243,239,233,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);top:0;border-color:var(--line)}
+.header.solid .brand img{filter:none}
+.header .btn{padding:11px 18px}
+.burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer;position:relative}
+.burger span{position:absolute;left:9px;right:9px;height:1px;background:currentColor;transition:transform .3s,opacity .3s}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:24px}
+.menu-open .burger span:nth-child(1){transform:translateY(4.5px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){transform:translateY(-4.5px) rotate(-45deg)}
+
+/* Hero */
+.hero{position:relative;height:100svh;min-height:620px;color:#fff;overflow:hidden;display:flex;align-items:flex-end}
+.hero__bg{position:absolute;inset:0}
+.hero__bg img{width:100%;height:100%;object-fit:cover;animation:kb 18s ease-out forwards}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.55) 0%,rgba(10,10,10,.15) 35%,rgba(10,10,10,.7) 100%)}
+.hero .wrap{position:relative;width:100%;padding-bottom:clamp(48px,9vh,96px)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(46px,8.2vw,124px);line-height:.96;letter-spacing:-.02em;max-width:12ch}
+.hero h1 em{font-style:italic;opacity:.85}
+.hero__row{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:34px;flex-wrap:wrap}
+.hero p{max-width:40ch;color:rgba(255,255,255,.82);font-size:17px}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero .eyebrow{color:rgba(255,255,255,.7);margin-bottom:22px}
+
+/* Datos */
+.facts{border-bottom:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:34px 24px 34px 0;border-right:1px solid var(--line)}
+.fact+.fact{padding-left:28px}
+.fact:last-child{border-right:0}
+.fact b{display:block;font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.1;margin-bottom:6px}
+.fact span{font-size:14px;color:var(--muted)}
+
+/* Secciones */
+section{scroll-margin-top:70px}
+.sec{padding:clamp(80px,11vw,150px) 0}
+.sec__head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:clamp(40px,6vw,72px);flex-wrap:wrap}
+.sec__head .eyebrow{margin-bottom:18px}
+
+/* Roller */
+.roller{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(32px,6vw,90px);align-items:stretch}
+.roller__img{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--paper-2)}
+.roller__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s,transform 1.2s;transform:scale(1.04)}
+.roller__img img.on{opacity:1;transform:scale(1)}
+.roller__tag{position:absolute;left:20px;bottom:20px;background:var(--paper);padding:10px 16px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:500}
+.tabs{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.tab{border-bottom:1px solid var(--line)}
+.tab__btn{width:100%;display:flex;align-items:baseline;gap:20px;padding:24px 0;background:none;border:0;cursor:pointer;text-align:left}
+.tab__btn small{font-size:11px;letter-spacing:.2em;color:var(--muted);width:22px;flex:none}
+.tab__btn strong{font-family:var(--serif);font-weight:400;font-size:clamp(26px,2.6vw,34px);line-height:1.1;flex:1;transition:color .3s}
+.tab:not(.open) .tab__btn strong{color:#9a948c}
+.tab__btn:hover strong{color:var(--ink)}
+.tab__btn i{font-style:normal;font-size:20px;color:var(--muted);transition:transform .3s}
+.tab.open .tab__btn i{transform:rotate(45deg)}
+.tab__body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
+.tab.open .tab__body{grid-template-rows:1fr}
+.tab__inner{overflow:hidden;padding-left:42px}
+.tab__inner p{color:var(--muted);margin-bottom:18px;max-width:46ch}
+.specs{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:22px}
+.specs li{background:var(--paper);padding:12px 14px;font-size:14px}
+.specs li span{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.tab__inner .link{margin-bottom:28px;display:inline-block}
+
+/* Sistemas */
+.dark{background:var(--ink);color:#fff}
+.dark .eyebrow,.dark .lead{color:rgba(255,255,255,.6)}
+.dark .h2 em{color:rgba(255,255,255,.55)}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(14px,1.6vw,22px)}
+.card{grid-column:span 2;position:relative;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:3/4;display:block;border:0;text-align:left;color:#fff;padding:0}
+.card:nth-child(1),.card:nth-child(2){grid-column:span 3;aspect-ratio:4/3}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82;transition:transform 1.1s cubic-bezier(.2,.7,.2,1),opacity .5s}
+.card:hover img{transform:scale(1.05);opacity:.65}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72))}
+.card__txt{position:absolute;left:0;right:0;bottom:0;padding:clamp(20px,2.4vw,32px);z-index:1}
+.card__txt small{font-size:10px;letter-spacing:.3em;text-transform:uppercase;opacity:.7}
+.card__txt h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,2.8vw,40px);line-height:1.05;margin:6px 0 8px}
+.card__txt p{font-size:14px;opacity:.78;max-width:38ch;max-height:0;overflow:hidden;transition:max-height .5s,opacity .5s}
+.card:hover .card__txt p,.card:focus-visible .card__txt p{max-height:120px}
+.card__txt .go{display:inline-block;margin-top:12px;font-size:10px;letter-spacing:.28em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:3px}
+
+/* Banda imagen */
+.band{position:relative;height:clamp(420px,70vh,720px);overflow:hidden;color:#fff;display:flex;align-items:center}
+.band img{position:absolute;inset:-12% 0;width:100%;height:124%;object-fit:cover;will-change:transform}
+.band::after{content:"";position:absolute;inset:0;background:rgba(15,15,15,.38)}
+.band .wrap{position:relative;z-index:1;width:100%;text-align:center}
+.band blockquote{font-family:var(--serif);font-size:clamp(34px,5.4vw,80px);line-height:1.04;font-weight:400}
+.band blockquote em{font-style:italic}
+.band .eyebrow{color:rgba(255,255,255,.75);margin-top:26px}
+
+/* Proceso */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.step{padding:34px 28px 10px 0}
+.step+.step{padding-left:28px;border-left:1px solid var(--line)}
+.step b{font-family:var(--serif);font-weight:400;font-size:56px;line-height:1;color:var(--stone);display:block;margin-bottom:22px}
+.step h3{font-size:12px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;margin-bottom:10px}
+.step p{font-size:15px;color:var(--muted)}
+
+/* Cómo medir */
+.medir{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px);margin-top:clamp(70px,9vw,120px);padding-top:clamp(50px,7vw,90px);border-top:1px solid var(--line);align-items:center}
+.medir__fig{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.medir__fig figure{background:var(--paper-2);padding:22px 18px 16px}
+.medir__fig svg{width:100%;height:auto}
+.medir__fig figcaption{font-size:10px;letter-spacing:.24em;text-transform:uppercase;text-align:center;margin-top:12px;color:var(--muted)}
+.medir ul{list-style:none;margin:24px 0 30px;border-top:1px solid var(--line)}
+.medir li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;font-size:15px}
+.medir li span{font-family:var(--serif);font-size:20px;line-height:1.2;color:var(--stone);width:22px;flex:none}
+
+/* Cotizador */
+.quote{background:var(--paper-2)}
+.quote__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,6vw,90px);align-items:start}
+.quote__aside{position:sticky;top:110px}
+.quote__aside .lead{margin:22px 0 30px}
+.pay{border-top:1px solid var(--line)}
+.pay div{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
+.pay div b{font-weight:500}
+.form{background:var(--paper);padding:clamp(22px,3.4vw,46px)}
+.items{display:flex;flex-direction:column;gap:18px}
+.item{border:1px solid var(--line);padding:22px 20px 20px;position:relative;animation:in .45s ease}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.item__hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.item__hd span{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.item__rm{background:none;border:0;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);cursor:pointer}
+.item__rm:hover{color:var(--ink)}
+.row{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.row--3{grid-template-columns:repeat(3,1fr)}
+.f{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;min-width:0}
+.f label{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.f input,.f select,.f textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);padding:9px 0;font-size:16px;font-weight:400;outline:none;border-radius:0;transition:border-color .25s;-webkit-appearance:none;appearance:none}
+.f select{background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 9px) 55%,calc(100% - 4px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:22px;cursor:pointer}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--ink)}
+.f.err input,.f.err select{border-color:#a3402e}
+.f textarea{resize:vertical;min-height:44px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-block;padding:8px 14px;border:1px solid var(--line);font-size:13px;cursor:pointer;transition:all .2s}
+.chip input:checked+span{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip input:focus-visible+span{outline:2px solid var(--ink);outline-offset:2px}
+.add{width:100%;margin:18px 0 30px;padding:16px;border:1px dashed rgba(21,21,21,.3);background:none;cursor:pointer;font-size:11px;letter-spacing:.26em;text-transform:uppercase;transition:border-color .2s,background .2s}
+.add:hover{border-color:var(--ink);background:rgba(21,21,21,.03)}
+.form__sep{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;padding-top:6px}
+.form__foot{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:12px}
+.form__foot small{color:var(--muted);font-size:13px}
+.form__msg{color:#a3402e;font-size:13px;min-height:20px;margin-top:10px}
+.item__price{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-top:1px solid var(--line);margin-top:6px;padding-top:14px}
+.item__price span{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.item__price b{font-family:var(--serif);font-weight:500;font-size:26px;line-height:1}
+.item__price b.na{font-family:var(--sans);font-size:13px;font-weight:400;color:var(--muted)}
+.total{background:var(--ink);color:#fff;padding:24px 22px;margin-bottom:18px}
+.total__row{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.total__row span{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.total__row b{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4vw,44px);line-height:1}
+.total__row--sm{margin-top:12px;padding-top:12px;border-top:1px solid var(--line-light)}
+.total__row--sm b{font-size:22px}
+.total small{display:block;margin-top:14px;font-size:12px;color:rgba(255,255,255,.55);line-height:1.5}
+
+/* FAQ */
+.faq{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,6vw,90px)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 40px 24px 0;font-family:var(--serif);font-size:clamp(22px,2vw,27px);line-height:1.25;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:22px;font-family:var(--sans);font-size:20px;color:var(--muted);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);padding:0 40px 26px 0;max-width:60ch}
+
+/* Footer */
+.footer{background:var(--ink);color:rgba(255,255,255,.7);padding:clamp(70px,9vw,110px) 0 30px}
+.footer__top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:60px;border-bottom:1px solid var(--line-light)}
+.footer__logo{height:120px;width:auto;filter:invert(1);margin-bottom:24px}
+.footer h4{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#fff;font-weight:500;margin-bottom:18px}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:15px}
+.footer a:hover{color:#fff}
+.footer__bot{display:flex;justify-content:space-between;gap:20px;padding-top:26px;font-size:12px;letter-spacing:.08em;flex-wrap:wrap}
+
+/* WhatsApp flotante */
+.wa{position:fixed;right:20px;bottom:20px;z-index:70;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .25s,background .25s}
+.wa:hover{transform:translateY(-3px);background:#25d366}
+.wa svg{width:24px;height:24px}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero__bg img{animation:none}}
+
+/* Responsive */
+@media (max-width:1020px){
+  .nav{position:fixed;inset:0;background:var(--ink);color:#fff;flex-direction:column;justify-content:center;gap:30px;opacity:0;pointer-events:none;transition:opacity .35s}
+  .nav a{font-size:13px}
+  .menu-open .nav{opacity:1;pointer-events:all}
+  .menu-open .header{color:#fff}
+  .menu-open .header .brand img{filter:invert(1)}
+  .burger{display:block;z-index:2}
+  .brand{position:relative;z-index:2}
+  .header .btn{display:none}
+  .roller,.quote__grid,.faq,.medir{grid-template-columns:1fr}
+  .quote__aside{position:static}
+  .grid{grid-template-columns:1fr 1fr}
+  .card,.card:nth-child(1),.card:nth-child(2){grid-column:span 1;aspect-ratio:3/4}
+  .card:nth-child(1){grid-column:span 2;aspect-ratio:16/10}
+  .card__txt p{max-height:none}
+  .steps{grid-template-columns:1fr 1fr}
+  .step:nth-child(3){border-left:0;padding-left:0}
+  .step:nth-child(n+3){border-top:1px solid var(--line)}
+  .footer__top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .topbar .hide-sm{display:none}
+  .header{top:36px}
+  .header .wrap{height:66px}
+  .brand .wm{display:none}
+  .brand img{height:34px}
+  .facts .wrap{grid-template-columns:1fr 1fr}
+  .fact{padding:24px 14px 24px 0}
+  .fact+.fact{padding-left:14px}
+  .fact:nth-child(2){border-right:0}
+  .fact:nth-child(3){padding-left:0}
+  .fact:nth-child(n+3){border-top:1px solid var(--line)}
+  .fact b{font-size:21px}
+  .grid{grid-template-columns:1fr}
+  .card,.card:nth-child(1),.card:nth-child(2){grid-column:span 1;aspect-ratio:4/5}
+  .steps{grid-template-columns:1fr}
+  .step,.step+.step{padding:28px 0 18px;border-left:0}
+  .step+.step{border-top:1px solid var(--line)}
+  .step b{font-size:44px;margin-bottom:12px}
+  .row--3{grid-template-columns:1fr 1fr}
+  .row--3 .f:first-child{grid-column:span 2}
+  .tab__inner{padding-left:0}
+  .specs{grid-template-columns:1fr}
+  .footer__top{grid-template-columns:1fr}
+  .hero__cta{width:100%}
+  .hero__cta .btn{flex:1;justify-content:center;padding:15px 10px;letter-spacing:.2em;white-space:nowrap}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>Fábrica de cortinas en Pilar</span><i class="hide-sm">/</i><span class="hide-sm">20% off en efectivo</span><i class="hide-sm">/</i><span class="hide-sm">3 y 6 cuotas sin interés</span>
+</div>
+
+<header class="header" id="header">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Aluwal Home, inicio">
+      <img src="img/logo-ah.png" alt="AH">
+      <img src="img/logo-wordmark.png" alt="Aluwal Home" class="wm">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#roller">Roller</a>
+      <a href="#sistemas">Sistemas</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#cotizar">Cotizar</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a href="#cotizar" class="btn">Pedir cotización</a>
+    <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg"><img src="img/cortina2.jpg" alt="Cortina roller sunscreen en ventanal"></div>
+  <div class="wrap">
+    <div class="eyebrow">Aluwal Home · Cortinas a medida</div>
+    <h1>Cortinas hechas <em>a la medida</em> de cada ventana.</h1>
+    <div class="hero__row">
+      <p>Fabricamos roller, eclipse, bandas verticales, paneles y clásicas en nuestro taller de Pilar. Medimos, fabricamos e instalamos.</p>
+      <div class="hero__cta">
+        <a href="#cotizar" class="btn btn--light">Cotizar ahora</a>
+        <a href="#roller" class="btn btn--light">Ver telas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATOS -->
+<div class="facts">
+  <div class="wrap">
+    <div class="fact rv"><b>Fábrica propia</b><span>Las cortinas las hacemos nosotros, en Pilar.</span></div>
+    <div class="fact rv"><b>Al centímetro</b><span>Cada cortina se corta para tu ventana.</span></div>
+    <div class="fact rv"><b>Instalación</b><span>Vamos a medir e instalar en zona norte.</span></div>
+    <div class="fact rv"><b>Sin interés</b><span>3 y 6 cuotas, o 20% off en efectivo.</span></div>
+  </div>
+</div>
+
+<!-- ROLLER -->
+<section class="sec" id="roller">
+  <div class="wrap">
+    <div class="sec__head">
+      <div>
+        <div class="eyebrow rv">01 — Cortinas roller</div>
+        <h2 class="h2 rv">Cuatro telas,<br><em>un mismo sistema.</em></h2>
+      </div>
+      <p class="lead rv">El roller es lo que más hacemos. Elegís la tela según cuánta luz querés que entre, y nosotros armamos el tubo, el mecanismo y el soporte a medida.</p>
+    </div>
+
+    <div class="roller">
+      <div class="roller__img rv" id="rollerImg">
+        <img src="img/cortina1.jpg" alt="Roller blackout en dormitorio" class="on" data-k="0">
+        <img src="img/cortinas.jpg" alt="Roller sunscreen en living" data-k="1">
+        <img src="img/cortina3.jpg" alt="Roller traslúcida" data-k="2">
+        <img src="img/roller.jpg" alt="Roller doble" data-k="3">
+        <div class="roller__tag" id="rollerTag">Blackout</div>
+      </div>
+
+      <div class="tabs rv" id="tabs">
+        <div class="tab open" data-k="0" data-name="Blackout">
+          <button class="tab__btn"><small>01</small><strong>Blackout</strong><i>+</i></button>
+          <div class="tab__body"><div class="tab__inner">
+            <p>No deja pasar la luz. Es la que va en dormitorios, cuartos de chicos y donde hay tele.</p>
+            <ul class="specs">
+              <li><span>Oscurecimiento</span>100%</li>
+              <li><span>Composición</span>PVC + fibra de vidrio</li>
+              <li><span>Propiedades</span>UV · retardante de fuego</li>
+              <li><span>Vida útil</span>+10 años</li>
+            </ul>
+            <button class="link" data-quote="Roller Blackout">Cotizar blackout</button>
+          </div></div>
+        </div>
+        <div class="tab" data-k="1" data-name="Sunscreen">
+          <button class="tab__btn"><small>02</small><strong>Sunscreen</strong><i>+</i></button>
+          <div class="tab__body"><div class="tab__inner">
+            <p>Filtra el sol y deja ver hacia afuera. Cuida pisos y muebles del UV. Viene con apertura de 5%, 6% u 8%: cuanto más bajo, menos luz pasa.</p>
+            <ul class="specs">
+              <li><span>Apertura</span>5% · 6% · 8%</li>
+              <li><span>Composición</span>30% poliéster · 70% PVC</li>
+              <li><span>Propiedades</span>UV · antibacteriana</li>
+              <li><span>Vida útil</span>+10 años</li>
+            </ul>
+            <button class="link" data-quote="Roller Sunscreen">Cotizar sunscreen</button>
+          </div></div>
+        </div>
+        <div class="tab" data-k="2" data-name="Traslúcida">
+          <button class="tab__btn"><small>03</small><strong>Deco traslúcida</strong><i>+</i></button>
+          <div class="tab__body"><div class="tab__inner">
+            <p>Tela de poliéster que suaviza la luz sin oscurecer. Da privacidad de día y viste el ambiente.</p>
+            <ul class="specs">
+              <li><span>Luz</span>Difusa</li>
+              <li><span>Composición</span>100% poliéster</li>
+              <li><span>Propiedades</span>No tóxica · antibacteriana</li>
+              <li><span>Mantenimiento</span>No requiere</li>
+            </ul>
+            <button class="link" data-quote="Roller Traslúcida">Cotizar traslúcida</button>
+          </div></div>
+        </div>
+        <div class="tab" data-k="3" data-name="Doble">
+          <button class="tab__btn"><small>04</small><strong>Doble</strong><i>+</i></button>
+          <div class="tab__body"><div class="tab__inner">
+            <p>Blackout y sunscreen en el mismo soporte, cada una con su cadena. De día bajás la sunscreen, de noche la blackout.</p>
+            <ul class="specs">
+              <li><span>Sistema</span>Doble soporte</li>
+              <li><span>Telas</span>Blackout + Sunscreen</li>
+              <li><span>Uso</span>Día y noche</li>
+              <li><span>Vida útil</span>+10 años</li>
+            </ul>
+            <button class="link" data-quote="Roller Doble">Cotizar doble</button>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SISTEMAS -->
+<section class="sec dark" id="sistemas">
+  <div class="wrap">
+    <div class="sec__head">
+      <div>
+        <div class="eyebrow rv">02 — Otros sistemas</div>
+        <h2 class="h2 rv">Para cada ventana,<br><em>el sistema que va.</em></h2>
+      </div>
+      <p class="lead rv">Ventanales, cocinas, puertas balcón. Si no sabés cuál te conviene, mandanos una foto y te decimos.</p>
+    </div>
+    <div class="grid">
+      <button class="card rv" data-quote="Eclipse / Zebra">
+        <img src="img/eclipse.jpg" alt="Cortina eclipse" loading="lazy">
+        <div class="card__txt"><small>Eclipse · Zebra</small><h3>Eclipse</h3><p>Franjas de tela opaca y traslúcida que se cruzan. Regulás la luz sin levantar la cortina.</p><span class="go">Cotizar</span></div>
+      </button>
+      <button class="card rv" data-quote="Bandas verticales">
+        <img src="img/banner-vintage.jpg" alt="Bandas verticales" loading="lazy">
+        <div class="card__txt"><small>Ventanales</small><h3>Bandas verticales</h3><p>Giran hasta 180° y se corren hacia un lado. Muy prácticas en ventanales y puertas balcón.</p><span class="go">Cotizar</span></div>
+      </button>
+      <button class="card rv" data-quote="Panel oriental">
+        <img src="img/panel.jpg" alt="Panel oriental" loading="lazy">
+        <div class="card__txt"><small>Paños deslizables</small><h3>Panel oriental</h3><p>Paños que corren en 3, 4 o 5 guías. Líneas limpias para aberturas grandes.</p><span class="go">Cotizar</span></div>
+      </button>
+      <button class="card rv" data-quote="Americanas">
+        <img src="img/americanas.jpg" alt="Cortina americana" loading="lazy">
+        <div class="card__txt"><small>Aluminio · madera</small><h3>Americanas</h3><p>Láminas horizontales que se inclinan. Ideales para cocinas y baños.</p><span class="go">Cotizar</span></div>
+      </button>
+      <button class="card rv" data-quote="Clásicas de tela">
+        <img src="img/clasicas.jpg" alt="Cortinas clásicas de tela" loading="lazy">
+        <div class="card__txt"><small>Lino · voile · blackout</small><h3>Clásicas</h3><p>Tela con caída, en barral o riel. Lino, voile o blackout.</p><span class="go">Cotizar</span></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- BANDA -->
+<div class="band">
+  <img src="img/ambiente4.jpg" alt="" id="parallax" loading="lazy">
+  <div class="wrap">
+    <blockquote class="rv">Lo esencial<br><em>está en los detalles.</em></blockquote>
+    <div class="eyebrow rv">Aluwal Home</div>
+  </div>
+</div>
+
+<!-- PROCESO -->
+<section class="sec" id="proceso">
+  <div class="wrap">
+    <div class="sec__head">
+      <div>
+        <div class="eyebrow rv">03 — Cómo trabajamos</div>
+        <h2 class="h2 rv">De la ventana<br><em>a la cortina puesta.</em></h2>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step rv"><b>01</b><h3>Nos escribís</h3><p>Por WhatsApp, con medidas aproximadas o una foto de la ventana.</p></div>
+      <div class="step rv"><b>02</b><h3>Presupuesto</h3><p>Te pasamos el precio y te mostramos telas y colores.</p></div>
+      <div class="step rv"><b>03</b><h3>Medimos y fabricamos</h3><p>Vamos a tomar la medida exacta y hacemos cada cortina en el taller.</p></div>
+      <div class="step rv"><b>04</b><h3>Instalamos</h3><p>La colocamos nosotros y te dejamos todo funcionando.</p></div>
+    </div>
+
+    <div class="medir">
+      <div class="rv">
+        <div class="eyebrow">Cómo medir</div>
+        <h2 class="h2" style="font-size:clamp(32px,3.6vw,48px);margin-top:16px">Para presupuestar,<br><em>alcanza con esto.</em></h2>
+        <ul>
+          <li><span>1</span>Medí el ancho y el alto en centímetros.</li>
+          <li><span>2</span>Decinos si va dentro del marco o tapando la ventana.</li>
+          <li><span>3</span>Si va afuera, sumale unos 10 cm a cada lado y arriba.</li>
+          <li><span>4</span>La medida final la tomamos nosotros antes de fabricar.</li>
+        </ul>
+        <a href="#cotizar" class="btn">Cargar medidas</a>
+      </div>
+      <div class="medir__fig rv">
+        <figure>
+          <svg viewBox="0 0 200 220" fill="none" stroke="#151515" stroke-width="1.2">
+            <rect x="30" y="30" width="140" height="160" stroke-width="6" stroke="#cfc6b8"/>
+            <rect x="36" y="36" width="128" height="148" stroke="#b9b0a2"/>
+            <rect x="38" y="38" width="124" height="90" fill="#151515" fill-opacity=".85" stroke="none"/>
+            <line x1="38" y1="18" x2="162" y2="18"/><line x1="38" y1="13" x2="38" y2="23"/><line x1="162" y1="13" x2="162" y2="23"/>
+            <line x1="186" y1="38" x2="186" y2="182"/><line x1="181" y1="38" x2="191" y2="38"/><line x1="181" y1="182" x2="191" y2="182"/>
+            <text x="100" y="12" font-size="10" text-anchor="middle" fill="#151515" stroke="none" font-family="Jost">ANCHO</text>
+          </svg>
+          <figcaption>Dentro del marco</figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 200 220" fill="none" stroke="#151515" stroke-width="1.2">
+            <rect x="44" y="44" width="112" height="146" stroke-width="6" stroke="#cfc6b8"/>
+            <rect x="50" y="50" width="100" height="134" stroke="#b9b0a2"/>
+            <rect x="26" y="28" width="148" height="104" fill="#151515" fill-opacity=".85" stroke="none"/>
+            <line x1="26" y1="16" x2="174" y2="16"/><line x1="26" y1="11" x2="26" y2="21"/><line x1="174" y1="11" x2="174" y2="21"/>
+            <text x="100" y="10" font-size="10" text-anchor="middle" fill="#151515" stroke="none" font-family="Jost">ANCHO + 20 CM</text>
+          </svg>
+          <figcaption>Tapando la ventana</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COTIZADOR -->
+<section class="sec quote" id="cotizar">
+  <div class="wrap quote__grid">
+    <div class="quote__aside">
+      <div class="eyebrow rv">04 — Cotizador</div>
+      <h2 class="h2 rv" style="margin-top:18px">Armá tu pedido<br><em>y mandalo.</em></h2>
+      <p class="lead rv">Cargá cada ventana con su medida y vas viendo el precio. Al final se abre WhatsApp con el pedido escrito y coordinamos la medición.</p>
+      <div class="pay rv">
+        <div><span>Efectivo</span><b>20% off</b></div>
+        <div><span>Tarjeta</span><b>3 y 6 cuotas sin interés</b></div>
+        <div><span>Zona</span><b>Pilar y zona norte</b></div>
+      </div>
+    </div>
+
+    <form class="form rv" id="form" novalidate>
+      <div class="items" id="items"></div>
+      <button type="button" class="add" id="add">+ Agregar otra ventana</button>
+
+      <div class="form__sep">Tus datos</div>
+      <div class="row">
+        <div class="f"><label for="nombre">Nombre</label><input id="nombre" autocomplete="name" placeholder="Tu nombre"></div>
+        <div class="f"><label for="zona">Localidad</label><input id="zona" autocomplete="address-level2" placeholder="Ej: Pilar"></div>
+      </div>
+      <div class="f"><label for="nota">Comentarios (opcional)</label><textarea id="nota" rows="2" placeholder="Color, horario para medir, lo que quieras agregar"></textarea></div>
+
+      <div class="total" id="total">
+        <div class="total__row"><span>Total estimado</span><b id="totTarjeta">—</b></div>
+        <div class="total__row total__row--sm"><span>En efectivo (20% off)</span><b id="totEfectivo">—</b></div>
+        <small id="totNota">Cargá ancho y alto para ver el precio. IVA incluido. El precio final se confirma cuando tomamos la medida.</small>
+      </div>
+
+      <div class="form__foot">
+        <small id="resumen">1 ventana</small>
+        <button type="submit" class="btn btn--solid">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.3-18.1C18.1 1.5 15.1.2 12 .2 5.5.2.2 5.5.2 12c0 2.1.5 4.1 1.6 5.9L.1 24l6.3-1.7c1.7.9 3.7 1.4 5.6 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3z"/></svg>
+          Enviar por WhatsApp
+        </button>
+      </div>
+      <div class="form__msg" id="msg" role="alert"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="preguntas">
+  <div class="wrap faq">
+    <div>
+      <div class="eyebrow rv">05 — Preguntas</div>
+      <h2 class="h2 rv" style="margin-top:18px">Lo que más<br><em>nos preguntan.</em></h2>
+    </div>
+    <div class="rv">
+      <details open><summary>¿Blackout o sunscreen?</summary><p>Si querés oscurecer del todo (dormitorio, tele), blackout. Si querés cortar el sol pero seguir viendo afuera (living, cocina, oficina), sunscreen. Si querés las dos cosas, roller doble.</p></details>
+      <details><summary>¿Tengo que medir yo?</summary><p>Para el presupuesto alcanza con una medida aproximada. Antes de fabricar vamos nosotros a tomar la medida exacta, así no hay errores.</p></details>
+      <details><summary>¿Instalan ustedes?</summary><p>Sí. Colocamos en Pilar y zona norte. Si estás en otra zona, escribinos y lo vemos.</p></details>
+      <details><summary>¿Se pueden motorizar?</summary><p>Sí, el roller se puede hacer motorizado con control remoto. Indicalo en el cotizador y te pasamos las opciones.</p></details>
+      <details><summary>¿Cómo se pagan?</summary><p>Con 20% de descuento en efectivo, o con tarjeta en 3 y 6 cuotas sin interés.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <img src="img/logo-full.png" alt="Aluwal Home" class="footer__logo">
+        <p style="max-width:32ch">Fábrica de cortinas a medida en Pilar, Buenos Aires.</p>
+      </div>
+      <div>
+        <h4>Productos</h4>
+        <ul><li><a href="#roller">Roller</a></li><li><a href="#sistemas">Eclipse</a></li><li><a href="#sistemas">Bandas verticales</a></li><li><a href="#sistemas">Panel oriental</a></li><li><a href="#sistemas">Americanas y clásicas</a></li></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul><li><a href="https://wa.me/5491166574154" target="_blank" rel="noopener">WhatsApp 11 6657-4154</a></li><li><a href="https://www.instagram.com/aluwalhome/" target="_blank" rel="noopener">Instagram @aluwalhome</a></li><li>Pilar, Buenos Aires</li><li>Zona norte GBA</li></ul>
+      </div>
+      <div>
+        <h4>Aluwal</h4>
+        <ul><li><a href="https://www.aluwalaberturas.com" target="_blank" rel="noopener">Aluwal Aberturas</a></li><li><a href="#cotizar">Pedir cotización</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© <span id="yr">2026</span> Aluwal Home</span>
+      <span><a href="https://www.instagram.com/aluwalhome/" target="_blank" rel="noopener">@aluwalhome</a> · Cortinas a medida · Pilar</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5491166574154?text=Hola%20Aluwal%20Home%2C%20quiero%20consultar%20por%20cortinas" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.3-18.1C18.1 1.5 15.1.2 12 .2 5.5.2.2 5.5.2 12c0 2.1.5 4.1 1.6 5.9L.1 24l6.3-1.7c1.7.9 3.7 1.4 5.6 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3z"/></svg>
+</a>
+
+<script>
+const WA = '5491166574154';
+const TIPOS = ['Roller Blackout','Roller Sunscreen','Roller Traslúcida','Roller Doble','Eclipse / Zebra','Bandas verticales','Panel oriental','Americanas','Clásicas de tela','Clásicas con barral'];
+const COLORES = ['Blanco','Beige / lino','Gris','Negro','No sé'];
+
+/* ===== PRECIOS (valores finales al cliente, IVA incluido) ===== */
+const DTO_EFECTIVO = 0.20;  // descuento que mostrás por pago en efectivo
+const REDONDEO = 1;
+const ROLLER = { fijo: 16260.72, cadenaM: 859.7, anchoM: 21793.52, colorSistema: 2278.22, extraAlto: 0.30, maxAlto: 3.5 };
+
+// Motorizadas: fijo incluye motor.
+const MOTOR = {
+  'Motorizada': { fijo: 317832.95, anchoM: 39730.65, tela: (A, H) => (A + 1) * (H + 0.4) },
+  'A batería':  { fijo: 550186.65, anchoM: 25606.93, tela: (A, H) => A * (H + 0.3) },
+};
+
+const TELAS = {
+  'Roller Blackout': [
+    { n: 'Blackout Super',    p: 13810.55, max: 2.95 },
+    { n: 'Blackout Premium',  p: 23156.77, p3: 33651.31, max: 2.95 },
+    { n: 'Blackout Marruecos', p: 38016.16, max: 2.45 },
+  ],
+  'Roller Sunscreen': [
+    { n: 'Sunscreen 6% Super',   p: 14387.78, max: 2.45 },
+    { n: 'Sunscreen 5%',         p: 23762.25, p3: 31131.15, max: 2.95 },
+    { n: 'Sunscreen Design',     p: 30654.62, max: 2.45 },
+    { n: 'Sunscreen 1% / 3%',    p: 46939.89, max: 2.45 },
+    { n: 'Screen 6% Rústico',    p: 68358.83, max: 2.45 },
+  ],
+  'Roller Traslúcida': [
+    { n: 'Traslúcida Lumia',  p: 20454.84, max: 2.45 },
+    { n: 'Traslúcida Milano', p: 24833.19, max: 2.45 },
+  ],
+
+  'Roller Doble': [
+    { n: 'Blackout Super + Sunscreen 6% Super', p: 13810.55 + 14387.78, max: 2.45 },
+    { n: 'Blackout Premium + Sunscreen 5%',     p: 23156.77 + 23762.25, p3: 33651.31 + 31131.15, max: 2.95 },
+    { n: 'Blackout Premium + Traslúcida Lumia', p: 23156.77 + 20454.84, max: 2.45 },
+  ],
+  'Eclipse / Zebra': [
+    { n: 'Eclipse blackout', p: 99013.45, max: 3.0 },
+    { n: 'Eclipse clásica',  p: 65184.06, max: 3.0 },
+  ],
+
+  'Bandas verticales': [
+    { n: 'Blackout Super',     p: 13810.55, max: 5.0 },
+    { n: 'Sunscreen 5%',       p: 23762.25, max: 5.0 },
+    { n: 'Blackout Premium',   p: 23156.77, max: 5.0 },
+    { n: 'Sunscreen 6% Super', p: 14387.78, max: 5.0 },
+    { n: 'Traslúcida Lumia',   p: 20454.84, max: 5.0 },
+    { n: 'Sunscreen 1% / 3%',  p: 46939.89, max: 5.0 },
+  ],
+  'Panel oriental': [
+    { n: 'Blackout Super',     p: 13810.55, max: 5.0 },
+    { n: 'Sunscreen 5%',       p: 23762.25, max: 5.0 },
+    { n: 'Blackout Premium',   p: 23156.77, max: 5.0 },
+    { n: 'Sunscreen 6% Super', p: 14387.78, max: 5.0 },
+    { n: 'Sunscreen Design',   p: 30654.62, max: 5.0 },
+    { n: 'Traslúcida Lumia',   p: 20454.84, max: 5.0 },
+  ],
+
+  'Americanas': [
+    { n: 'Aluminio 50 mm',     p: 210265.42, max: 4.0 },
+    { n: 'Aluminio 25 mm',     p: 91718.24,  max: 4.0 },
+    { n: 'Símil madera 50 mm', p: 353780.89, max: 4.0 },
+    { n: 'Madera 50 mm',       p: 450915.27, max: 4.0 },
+  ],
+
+  'Clásicas de tela': [
+    { n: 'Voile Lourdes',     p: 5035.41 },
+    { n: 'Gasa Lola',         p: 5845.99 },
+    { n: 'Gasa Luka',         p: 6853.08 },
+    { n: 'Tusor de algodón',  p: 9235.69 },
+    { n: 'Lino Leonor',       p: 10942.82 },
+    { n: 'Blackout Melody',   p: 6509.19 },
+    { n: 'Blackout Viva',     p: 7018.88 },
+    { n: 'Blackout Amelie',   p: 11010.36 },
+    { n: 'Gasa Lola + Blackout Melody (doble)', p: 5845.99 + 6509.19, doble: true },
+  ],
+  'Clásicas con barral': [
+    { n: 'Voile Lourdes',     p: 5035.41 },
+    { n: 'Gasa Lola',         p: 5845.99 },
+    { n: 'Gasa Luka',         p: 6853.08 },
+    { n: 'Tusor de algodón',  p: 9235.69 },
+    { n: 'Lino Leonor',       p: 10942.82 },
+    { n: 'Blackout Melody',   p: 6509.19 },
+    { n: 'Blackout Viva',     p: 7018.88 },
+    { n: 'Blackout Amelie',   p: 11010.36 },
+  ],
+};
+
+const ECLIPSE = { anchoM: 93173.6, motor: 516279.88, motorAnchoM: 41978.17 };
+
+
+const PANEL = { anchoM: 127879.29 };
+
+const AMERICANA_MOTOR = { anchoM: 443313.02, fijo: 860540.15 };
+
+const CLASICA = { rielM: 88248.73, barralM: 166702.95, motor: 434175.6, motorRielM: 337814.94 };
+const BANDAS = { fijo: 38146.35, anchoM: 86474.04, negroM: 8646.18, motor: 934223.01, motorAnchoM: 656243.53 };
+const fmt = n => '$' + Math.round(n).toLocaleString('es-AR');
+
+// Devuelve el precio al cliente por unidad (IVA incluido) o null si no se puede calcular online.
+function precioRoller({ tipo, tela, ancho, alto, color, acc }) {
+  const linea = (TELAS[tipo] || []).find(t => t.n === tela);
+  if (!linea) return null;
+  const A = ancho / 100, H = alto / 100;
+  if (!(A > 0 && H > 0) || A > (linea.max || 6) || H > ROLLER.maxAlto) return null;
+  const m2 = (A > 2.45 && linea.p3) ? linea.p3 : linea.p;
+  const conColor = color && color !== 'Blanco' && color !== 'No sé';
+  const doble = tipo === 'Roller Doble';
+  const motorizada = acc === 'Motorizada';
+  let lista;
+  const tela2 = (a, h = H) => m2 * 2 * a * (h + 0.4); // metros de tela de una clásica
+  if (tipo === 'Panel oriental') {
+    if (acc && acc !== 'Cadena') return null;
+    lista = PANEL.anchoM * A + m2 * 1.3 * A * (H + 0.1);
+  } else if (tipo === 'Americanas') {
+    const area = Math.max(A, 1) * Math.max(H, 1);
+    lista = m2 * area;
+    if (motorizada) {
+      if (linea.n !== 'Aluminio 25 mm') return null;
+      lista += AMERICANA_MOTOR.anchoM * Math.max(A, 1) + AMERICANA_MOTOR.fijo;
+    } else if (acc === 'A batería') return null;
+  } else if (tipo === 'Clásicas de tela') {
+    if (acc === 'A batería') return null;
+    if (linea.doble) {
+      if (motorizada) return null;
+      lista = 2 * CLASICA.rielM * A + tela2(A);
+    } else if (motorizada) {
+      lista = CLASICA.motor + CLASICA.motorRielM * A + tela2(A);
+    } else {
+      const A1 = Math.max(A, 1);                     // riel europeo: mínimo 1 × 1 m
+      lista = CLASICA.rielM * A1 + tela2(A1, Math.max(H, 1));
+    }
+  } else if (tipo === 'Clásicas con barral') {
+    if (acc && acc !== 'Cadena') return null;
+    lista = CLASICA.barralM * A + tela2(A);
+  } else if (tipo === 'Eclipse / Zebra') {
+    if (acc === 'A batería') return null;
+    lista = ECLIPSE.anchoM * A + m2 * A * H;
+    if (motorizada) lista += ECLIPSE.motor + ECLIPSE.motorAnchoM * A;
+  } else if (tipo === 'Bandas verticales') {
+    if (acc === 'A batería') return null;
+    const tela = linea.p * 1.3 * A * (H + ROLLER.extraAlto);
+    lista = motorizada ? BANDAS.motor + BANDAS.motorAnchoM * A + tela
+                       : BANDAS.fijo + BANDAS.anchoM * A + tela + (color === 'Negro' ? BANDAS.negroM * A : 0);
+  } else if (MOTOR[acc]) {
+    if (doble) return null;                       // doble motorizada: a cotizar
+    const m = MOTOR[acc];
+    lista = m.fijo + m2 * m.tela(A, H) + m.anchoM * A;
+  } else {
+    const k = doble ? 2 : 1;                      // doble = dos sistemas
+    lista = k * ROLLER.fijo
+      + m2 * A * (H + ROLLER.extraAlto)
+      + k * ROLLER.cadenaM * (H + 1)
+      + k * ROLLER.anchoM * A;
+    if (conColor) lista += k * ROLLER.colorSistema;
+  }
+  const cliente = lista;
+  return Math.round(cliente / REDONDEO) * REDONDEO;
+}
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* Header + menú */
+const header = document.getElementById('header');
+const onScroll = () => header.classList.toggle('solid', scrollY > 60);
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
+document.getElementById('burger').onclick = () => document.body.classList.toggle('menu-open');
+document.querySelectorAll('#nav a').forEach(a => a.onclick = () => document.body.classList.remove('menu-open'));
+
+/* Reveal */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 80 + 'ms'; io.observe(el); });
+
+/* Parallax banda */
+const px = document.getElementById('parallax');
+addEventListener('scroll', () => {
+  const r = px.parentElement.getBoundingClientRect();
+  if (r.bottom > 0 && r.top < innerHeight) px.style.transform = `translateY(${(r.top / innerHeight - .5) * -60}px)`;
+}, {passive:true});
+
+/* Tabs roller */
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach(t => t.querySelector('.tab__btn').onclick = () => {
+  tabs.forEach(x => x.classList.toggle('open', x === t));
+  document.querySelectorAll('#rollerImg img').forEach(im => im.classList.toggle('on', im.dataset.k === t.dataset.k));
+  document.getElementById('rollerTag').textContent = t.dataset.name;
+});
+
+/* Cotizador */
+const itemsEl = document.getElementById('items');
+let n = 0;
+const opts = (arr, sel) => arr.map(v => `<option${v === sel ? ' selected' : ''}>${v}</option>`).join('');
+
+function addItem(tipo) {
+  n++;
+  const el = document.createElement('div');
+  el.className = 'item';
+  el.innerHTML = `
+    <div class="item__hd"><span>Ventana</span><button type="button" class="item__rm">Quitar</button></div>
+    <div class="row">
+      <div class="f"><label>Tipo de cortina</label><select name="tipo">${opts(TIPOS, tipo || TIPOS[0])}</select></div>
+      <div class="f" data-tela><label>Tela</label><select name="tela"></select></div>
+    </div>
+    <div class="row row--3">
+      <div class="f"><label>Ambiente</label><input name="amb" placeholder="Ej: dormitorio"></div>
+      <div class="f"><label>Ancho (cm)</label><input name="ancho" type="number" inputmode="numeric" min="20" max="600" placeholder="120"></div>
+      <div class="f"><label>Alto (cm)</label><input name="alto" type="number" inputmode="numeric" min="20" max="400" placeholder="150"></div>
+    </div>
+    <div class="row">
+      <div class="f"><label>Cantidad</label><input name="cant" type="number" inputmode="numeric" min="1" value="1"></div>
+      <div class="f"><label>Color</label><select name="color">${opts(COLORES, 'No sé')}</select></div>
+    </div>
+    <div class="f" data-motor><label>Accionamiento</label>
+      <div class="chips">
+        <label class="chip"><input type="radio" name="acc${n}" value="Cadena" checked><span>Cadena</span></label>
+        <label class="chip"><input type="radio" name="acc${n}" value="Motorizada"><span>Motorizada</span></label>
+        <label class="chip"><input type="radio" name="acc${n}" value="A batería"><span>A batería</span></label>
+      </div>
+    </div>
+    <div class="item__price"><span>Precio estimado</span><b data-precio class="na">Cargá las medidas</b></div>`;
+  const sel = el.querySelector('[name=tipo]');
+  const motor = el.querySelector('[data-motor]');
+  const telaF = el.querySelector('[data-tela]');
+  const telaSel = el.querySelector('[name=tela]');
+  const sync = () => {
+    const conMotor = sel.value.startsWith('Roller') || ['Eclipse / Zebra', 'Bandas verticales', 'Americanas', 'Clásicas de tela'].includes(sel.value);
+    motor.querySelector('input[value="Cadena"]').nextElementSibling.textContent = /^(Roller|Eclipse)/.test(sel.value) ? 'Cadena' : 'Manual';
+    motor.style.display = conMotor ? '' : 'none';
+    const bat = motor.querySelector('input[value="A batería"]');
+    bat.closest('.chip').style.display = sel.value.startsWith('Roller') ? '' : 'none';
+    if (bat.checked && !sel.value.startsWith('Roller')) motor.querySelector('input[value="Cadena"]').checked = true;
+    const telas = TELAS[sel.value];
+    telaF.style.visibility = telas ? 'visible' : 'hidden';
+    telaF.querySelector('label').textContent = sel.value === 'Americanas' ? 'Material' : 'Tela';
+    telaSel.innerHTML = telas ? opts(telas.map(t => t.n), telas[telas.length > 1 ? 1 : 0].n) : '';
+    calc();
+  };
+  sel.onchange = sync;
+  el.addEventListener('input', calc);
+  el.addEventListener('change', e => { if (e.target !== sel) calc(); });
+  el.querySelector('.item__rm').onclick = () => { el.remove(); refresh(); };
+  itemsEl.appendChild(el);
+  sync();
+  refresh();
+  return el;
+}
+
+// Lee una ventana del formulario
+function leer(it) {
+  const v = k => it.querySelector(`[name=${k}]`).value.trim();
+  const accIn = it.querySelector('[data-motor] input:checked');
+  return {
+    tipo: v('tipo'), tela: v('tela'), amb: v('amb'), color: v('color'),
+    ancho: +v('ancho'), alto: +v('alto'), cant: Math.max(1, +v('cant') || 1),
+    acc: it.querySelector('[data-motor]').style.display === 'none' ? '' : accIn.value,
+  };
+}
+
+function calc() {
+  let total = 0, todas = true, alguna = false;
+  itemsEl.querySelectorAll('.item').forEach(it => {
+    const d = leer(it);
+    const out = it.querySelector('[data-precio]');
+    const pu = precioRoller(d);
+    it.dataset.pu = pu || '';
+    if (!d.ancho || !d.alto) { out.className = 'na'; out.textContent = 'Cargá las medidas'; todas = false; return; }
+    if (pu == null) { out.className = 'na'; out.textContent = 'Te lo cotizamos por WhatsApp'; todas = false; return; }
+    alguna = true;
+    total += pu * d.cant;
+    out.className = '';
+    out.textContent = fmt(pu * d.cant) + (d.cant > 1 ? ` · ${d.cant} u.` : '');
+  });
+  document.getElementById('totTarjeta').textContent = alguna ? fmt(total) : '—';
+  document.getElementById('totEfectivo').textContent = alguna ? fmt(total * (1 - DTO_EFECTIVO)) : '—';
+  document.getElementById('totNota').textContent = !alguna
+    ? 'Cargá ancho y alto para ver el precio. IVA incluido. El precio final se confirma cuando tomamos la medida.'
+    : (todas ? 'IVA incluido. El precio final se confirma cuando tomamos la medida.'
+             : 'Algunas ventanas no tienen precio online (sistemas especiales o medidas grandes): te las cotizamos por WhatsApp.');
+}
+
+function refresh() {
+  const items = itemsEl.querySelectorAll('.item');
+  items.forEach((it, i) => {
+    it.querySelector('.item__hd span').textContent = 'Ventana ' + String(i + 1).padStart(2, '0');
+    it.querySelector('.item__rm').style.visibility = items.length > 1 ? 'visible' : 'hidden';
+  });
+  document.getElementById('resumen').textContent = items.length + (items.length === 1 ? ' ventana' : ' ventanas');
+  calc();
+}
+
+document.getElementById('add').onclick = () => addItem().querySelector('[name=ancho]').focus();
+addItem();
+
+/* Botones "Cotizar" de productos: precargan el tipo */
+document.querySelectorAll('[data-quote]').forEach(b => b.addEventListener('click', () => {
+  const tipo = b.dataset.quote;
+  const items = [...itemsEl.querySelectorAll('.item')];
+  const libre = items.find(it => !it.querySelector('[name=ancho]').value);
+  const it = libre || addItem();
+  const sel = it.querySelector('[name=tipo]'); sel.value = tipo; sel.onchange();
+  document.getElementById('cotizar').scrollIntoView({behavior:'smooth'});
+  setTimeout(() => it.querySelector('[name=ancho]').focus({preventScroll:true}), 700);
+}));
+
+document.getElementById('form').onsubmit = e => {
+  e.preventDefault();
+  const msg = document.getElementById('msg');
+  msg.textContent = '';
+  document.querySelectorAll('.f.err').forEach(f => f.classList.remove('err'));
+  let ok = true, total = 0;
+  const lines = [];
+  itemsEl.querySelectorAll('.item').forEach((it, i) => {
+    const d = leer(it);
+    ['ancho', 'alto'].forEach(k => { if (!d[k] || d[k] < 20) { it.querySelector(`[name=${k}]`).closest('.f').classList.add('err'); ok = false; } });
+    const pu = precioRoller(d);
+    let l = `*${i + 1}. ${d.tipo}*`;
+    if (d.tela) l += ` ${d.tela.replace(/^(Blackout|Sunscreen|Traslúcida) ?/, '')}`;
+    if (d.amb) l += ` — ${d.amb}`;
+    l += `\n   ${d.ancho} x ${d.alto} cm · ${d.cant} u.`;
+    if (d.color !== 'No sé') l += ` · ${d.color}`;
+    if (d.acc) l += ` · ${d.acc === 'Cadena' && !/^(Roller|Eclipse)/.test(d.tipo) ? 'Manual' : d.acc}`;
+    if (pu) { l += `\n   Estimado: ${fmt(pu * d.cant)}`; total += pu * d.cant; }
+    lines.push(l);
+  });
+  if (!ok) { msg.textContent = 'Completá ancho y alto en centímetros (mínimo 20).'; return; }
+  if (total) lines.push(`*Total estimado: ${fmt(total)}* (efectivo ${fmt(total * (1 - DTO_EFECTIVO))})`);
+  const nombre = document.getElementById('nombre').value.trim();
+  const zona = document.getElementById('zona').value.trim();
+  const nota = document.getElementById('nota').value.trim();
+  let t = `Hola Aluwal Home! Quiero cotizar:\n\n${lines.join('\n\n')}`;
+  if (nombre || zona) t += `\n\n${[nombre, zona].filter(Boolean).join(' · ')}`;
+  if (nota) t += `\nNota: ${nota}`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(t)}`, '_blank');
+};
+</script>
+</body>
+</html>
